@@ -1,0 +1,166 @@
+/* Universal Reset */
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+
+/* Body Styling */
+body {
+    background-color: black;
+    color: seashell;
+    opacity: 0.9;
+    font-family: Helvetica, Arial, sans-serif;
+    font-size: 22px;
+    display: flex;
+    align-items: center;
+    flex-direction: column;
+    text-align: center;
+}
+
+h2,
+h4 {
+    padding: 5px;
+    text-align: center;
+}
+
+/* Header  */
+.header {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    position: fixed;
+    top: 0;
+    left: 0;
+    height: 70px;
+    border-bottom: 1px solid seashell;
+    width: 100%;
+    padding: 0px 20px;
+    z-index: 10; /* S'assure que le header reste au-dessus */
+    background-color: black;  
+}
+
+.header__logo {
+    height: 50px;
+}
+
+.header__nav {
+    display: flex;
+    gap: 20px;
+    list-style: none; 
+}
+
+.header__nav a {
+    text-decoration: underline;
+    color: seashell;
+}
+
+.header__nav a:hover {
+    color: blue;
+}
+
+/* Section Mission */
+.mission {
+    background-image: url("../images/img-mission-background.jpg");
+    background-size: cover;
+    background-position: center;
+    height: 700px;
+    width: 1200px;
+    margin: 70px auto;
+    display: flex;
+    align-items: center;
+}
+
+.mission__content {
+    display: flex;
+    align-items: center;
+    flex-direction: column;
+    width: 100%;
+    background-color: black;
+    padding: 20px;
+}
+
+/* Section Tea */
+.tea {
+    display:flex;
+    align-items: center;
+    flex-direction: column;
+    width: 1000px;
+    height: 600px;
+    margin-bottom: 70px;
+}
+
+.tea__header {
+    display:flex;
+    align-items: center;
+    flex-direction: column;
+}
+
+.tea__gallery {
+    display:flex;
+    flex-wrap: wrap;
+    align-items: center;
+    justify-content:center;
+}
+
+.tea__item {
+    display: flex;
+    align-items: center;
+    flex-direction: column;
+    font-weight: bold;
+}
+
+.tea__item-img {
+    margin: 10px 15px;
+    width: 300px;
+    height: 200px;
+}
+
+/* Section Location */
+
+.location {
+    background-image: url("../images/img-locations-background.jpg");
+    background-size: cover;
+    background-position: center;
+    height: 500px;
+    width: 1200px;
+    display: flex;
+    align-items: center;
+    justify-content:center;
+    flex-direction: column;
+}
+
+.location__list {
+    display: flex;
+}
+
+.location__item {
+    height: 300px;
+    width: 300px;
+    display: flex;
+    align-items: center;
+    justify-content:center;
+    flex-direction: column;
+    background-color: black;
+    margin: 15px 20px;
+}
+
+.location__item p {
+    line-height: 1.5; /* Contrôle l'espacement entre les lignes */
+    margin: 5px 0; /* Ajoute de l'espace entre les paragraphes */
+}
+
+/* Section Contact */
+
+.contact {
+    height: 200px;
+    text-align: center;
+}
+
+/* Section Footer */
+
+footer {
+    position: relative;
+    right: 600px;
+    margin: 20px;
+}
